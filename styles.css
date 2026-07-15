@@ -1,5 +1,6 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
     background-color: hsl(210, 46%, 95%);
     color: hsl(213, 19%, 18%);
     margin: 0;
@@ -23,10 +24,12 @@ figure {
 }
 
 .card img {
-    width: 100px;
-    height: 100px;
+    float: left;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-bottom: 10px;
+    padding-right: 10px;
 }
 
 .card a {
@@ -35,20 +38,19 @@ figure {
     margin-bottom: 5px;
 }
 
-.card cite {
-    font-style: normal;
-    color: hsl(210, 46%, 95%);
-    background-color: hsl(213, 19%, 18%);
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-
 .card-title {
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 80px;
 }
-
+ 
 .card-content {
     font-size: 1em;
     line-height: 1.5;
+}
+
+.card blockquote {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding-left: 1px;
 }
