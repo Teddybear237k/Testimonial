@@ -19,7 +19,7 @@ figure {
     background-color: hsl(0, 0%, 100%);
     border-radius: 5px;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,4 +53,75 @@ figure {
     font-size: 1.1em;
     margin: 10px 0;
     padding-left: 1px;
+    justify-content: flex-end;
+    align-items: end;
 }
+
+.grid{
+    max-width: 1140px;
+    max-height: 40%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 2px;
+}
+.daniel {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.jonathan {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.kira {
+    grid-column: 4;
+    grid-row: 1/3;
+}
+
+.jeanette {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.patrick {
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+ .theme-purple {
+    background: linear-gradient(135deg, #7B3FE4, #6A2FD1);
+    color: #fff;
+  }
+  .theme-purple .author-role,
+  .theme-purple .quote { color: rgba(255,255,255,0.75); }
+ 
+  .theme-slate {
+    background: #47536B;
+    color: #fff;
+  }
+  .theme-slate .author-role,
+  .theme-slate .quote { color: rgba(255,255,255,0.65); }
+ 
+  .theme-dark {
+    background: linear-gradient(180deg, #171D2E, #0E1220);
+    color: #fff;
+  }
+  .theme-dark .author-role,
+  .theme-dark .quote { color: rgba(255,255,255,0.6); }
+ 
+  .theme-white {
+    background: #ffffff;
+    color: #1A1D29;
+  }
+  .theme-white .author-role { color: #8A8F9B; }
+  .theme-white .quote { color: #6B7280; }
+ 
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr; }
+    .daniel, .jonathan, .kira, .jeanette, .patrick {
+      grid-column: 1; grid-row: auto;
+    }
+  }
